@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temprature</title>
+
+  <script>
+      let liste = '{{ liste }}';
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="https://cdn3.devexpress.com/jslib/17.1.6/js/dx.all.js"></script>
+  <script src="static/script.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="static/mycss.css">
+
+
+</head>
+<body>
+
+  <main class="main">
+    <button id="random" class="button">Random value</button>
+    <h1 class="main__title">Sera Sıcaklıkları</h1>
+
+    <div class="gauge-container">
+      <div class="gauge"></div>
+      <div class="gauge"></div>
+      <div class="gauge"></div>
+    </div>
+
+
+    <div class="gauge-container">
+      <div class="input-group flex-nowrap">
+        <input type="text" class="form-control" placeholder="ºC" aria-label="ºC" aria-describedby="addon-wrapping">
+        <button type="button" class="btn btn-warning">Ayarla</button>
+      </div>
+       <div class="input-group flex-nowrap">
+        <input type="text" class="form-control" placeholder="ºC" aria-label="ºC" aria-describedby="addon-wrapping">
+        <button type="button" class="btn btn-warning">Ayarla</button>
+      </div>
+       <div class="input-group flex-nowrap">
+        <input type="text" class="form-control" placeholder="ºC" aria-label="ºC" aria-describedby="addon-wrapping">
+        <button type="button" class="btn btn-warning">Ayarla</button>
+       </div>
+    </div>
+
+  </main>
+
+<!--  <footer class="footer">-->
+<!--    <p>A pen by <a href="http://brunocarvalho.me">Bruno Carvalho</a></p>-->
+<!--  </footer>-->
+
+  <svg width="0" height="0" version="1.1" class="gradient-mask" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="gradientGauge">
+          <stop class="color-red" offset="0%"/>
+          <stop class="color-yellow" offset="17%"/>
+          <stop class="color-green" offset="40%"/>
+          <stop class="color-yellow" offset="87%"/>
+          <stop class="color-red" offset="100%"/>
+        </linearGradient>
+    </defs>
+  </svg>
+
+</body>
+</html>
+
